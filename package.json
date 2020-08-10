@@ -36,11 +36,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
-    "test:watch": "react-scripts test --modulePaths=src",
-    "test:coverage": "react-scripts test --modulePaths=src --coverage",
     "lint": "eslint --ignore-path .gitignore .",
     "test": "is-ci \"test:coverage\" \"test:watch\"",
+    "test:watch": "react-scripts test --modulePaths=src",
+    "test:coverage": "react-scripts test --modulePaths=src --coverage",
+    "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|tsx|json|css|html|md)\""
   },
   "eslintConfig": {
